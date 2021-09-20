@@ -1,0 +1,8 @@
+x = input("Masukkan namamu")
+print("Selamat Datang" + x)
+
+x = input("Di mana kamu sekolah?")
+print("Keren dari" + x)
+
+x = input("Dari mana asalmu?")
+print("Jauh sekali dari" + x)
