@@ -1,0 +1,17 @@
+@Materi : Variabel dan Pemrograman Dasar
+@Judul : Praktikum 1 Materi
+@Hari/Tanggal : Minggu, 20210926
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+print("hi")
+print("count the room's area")
+
+x = int(input("the room's length :"))
+y = int(input("the room's width :"))
+
+A = input("masukkan satuan (meter or inch) :")
+B = x*y
+      
+print("jadi, hasil luas ruangan dengan panjang", x, "dan lebar", y, "adalah:", B)
