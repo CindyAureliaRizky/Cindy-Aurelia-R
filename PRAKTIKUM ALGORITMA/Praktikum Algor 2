@@ -1,0 +1,33 @@
+@Materi : Operasi Aritmatika
+@Judul : Praktikum 2 Materi
+@Hari/Tanggal : Senin, 20210927
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+print("C = 29 dan A = 7")
+
+C = 29
+A = 7
+
+R = C+A
+print("hasil penjumlahan", R)
+
+R = A-C
+print("hasil pengurangan", R)
+
+R = A*C
+print("hasil perkalian", R)
+
+R = C%A
+print("hasil sisa bagi", R)
+
+R = C/A
+print("hasil pembagian", R)
+
+R = C ** A
+print("hasil pemangkatan", R)
+
+import math
+C = math.pi/29
+print(math.log(C))
