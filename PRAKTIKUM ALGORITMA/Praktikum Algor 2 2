@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct  2 03:00:01 2021
+
+@Materi : Operasi Aritmatika
+@Judul : Praktikum 2 Materi
+@Hari/Tanggal : Minggu, 211003
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+import math
+
+AL = 5450000
+print(("lat L =", AL))
+RL = 105266670
+print(("Long L =", RL))
+AJ = 6150760
+print(("Lat J =", AJ))
+RJ = 106826927
+print(("Long J =", RJ))
+
+Latitude = AL - RJ
+Longtitude = RL - AJ
+
+U1 = math.sin(Latitude/2)**2
+print("sin(Lat/2) =", U1)
+U2 = math. sin(Longtitude/2)**2
+print("sin(Long/2) =", U2)
+
+E1 = math.cos(AL)
+print("cos(5450000) =", E1)
+E2 = math.cos(AJ)
+print("cos(6150760) =", E2)
+
+
+A = U1+E1*E2*U2
+
+C = 2*math.atan2(math.sqrt(A), math.sqrt(1-A))
+
+d = 6371*C
+
+print("The result of the distance between two points on the earth's surface is", d, "kilometers")
