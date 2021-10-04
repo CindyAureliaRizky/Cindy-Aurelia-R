@@ -20,11 +20,11 @@ if(A == U == R):
 elif((A + U <= R) or (U + R <= A) or (A + R <= U)):
     print("this is not triangle")
     
-elif((A == U) and (A != R) and (U != R)):
+elif((A == U) or (A == R) or (U == R)):
     print("this is isosceles triangle")
-
-elif(R < U < A):
-    print("this is scalene triangle")
     
 elif(A**2 + U**2 == R**2):
     print("this is angled triangle")
+    
+else:
+    print("this is scalene triangle")
