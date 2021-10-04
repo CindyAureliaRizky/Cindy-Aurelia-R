@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  4 14:37:38 2021
+
+@Materi : Control Structure
+@Judul : Praktikum 2 Materi
+@Hari/Tanggal : Minggu, 211004
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+
+"""
+
+A = float(input("A length :"))
+U = float(input("U length :"))
+R = float(input("R length :"))
+
+if(A == U == R):
+    print("this is the equilateral triangle")
+
+elif((A + U <= R) or (U + R <= A) or (A + R <= U)):
+    print("this is not triangle")
+    
+elif((A == U) and (A != R) and (U != R)):
+    print("this is isosceles triangle")
+
+elif(R < U < A):
+    print("this is scalene triangle")
+    
+elif(A**2 + U**2 == R**2):
+    print("this is angled triangle")
