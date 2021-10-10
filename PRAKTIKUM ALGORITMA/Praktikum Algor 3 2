@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 21:27:42 2021
+
+@Materi : Persamaan Kuadrat
+@Judul : Praktikum 3 Materi
+@Hari/Tanggal : Minggu, 211010
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+import math
+
+
+A = float(input("Add A :"))
+B = float(input("Add B :"))
+C = float(input("Add C :"))
+
+if A == 0:
+    print("Ini bukan persamaan kuadrat")
+
+else:
+    D = float(B**2)+(-4*A*C)
+    
+    if D == 0:
+        P1 = (-B / 2*A)
+        P2 = (-B / 2*A)
+        print("Merupakan akar kembar")
+        print(f"Persamaan kuadrat : {A}x^2 + {B}*x + {C}")
+        print("Akar P1 :", P1)
+        print("Akar P2 :", P2)
+        print("Determinan :", D)
+        
+    elif D < 0:
+        print("Merupakan akar imaginer") 
+        print(f"Persamaan kuadrat : {A}x^2 + {B}*x + {C}")
+        print(f"Akar P1 = -{B} + Akar{D} / {B} * {A}")
+        print(f"Akar P2 = -{B} - Akar{D} / {B} * {A}")
+        
+    elif D > 0:
+        P1 = (-B + math.sqrt(D)) / (2*A)
+        P2 = (-B - math.sqrt(D)) / (2*A)
+        print("Merupakan akar berbeda")
+        print(f"Persamaan kuadrat : {A}x^2 + {B}*x + {C}")
+        print("Determinan :", D)
+        print("Akar P1 :", P1)
+        print("Akar P2 :", P2)
