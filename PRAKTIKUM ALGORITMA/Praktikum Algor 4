@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 13:52:18 2021
+
+@Materi : Pengulangan
+@Judul : Praktikum 2 Materi
+@Hari/Tanggal : Minggu, 211011
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+R = int(input("Add the number :"))
+for E in range(-1, R):
+    for L in range(-1, R-1):
+        print(R, end=" ")       
+        
+    R -= 1
+    print(" ")
