@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 17 22:03:13 2021
+
+@Materi : Operasi Aritmatika
+@Judul : Praktikum 4 
+@Hari/Tanggal : Minggu, 211017
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+A = True
+print("Welcome!")
+while(A == True):
+    
+    inputBulan = int(input("Insert bulan (1-12): "))
+    inputTahun = int(input("Insert tahun: "))
+
+    if(inputBulan == -1):
+        A = False
+        print("see you next time :)")
+    
+    elif(inputBulan >= 13 or inputBulan <= 0):
+	    print("Bulan tidak dapat ditemukan")
+    elif(inputBulan == 1 or inputBulan == 3 or inputBulan == 5 or inputBulan == 7 or inputBulan == 8 or inputBulan == 10 or inputBulan == 12):
+	    print("Total hari pada bulan ke-", inputBulan, "pada tahun", inputTahun, "adalah 31 hari")
+    elif(inputBulan == 2):
+        
+        if(inputTahun % 4 == 0 and inputBulan == 2):
+             print("Total hari pada bulan ke-", inputBulan, "pada tahun", inputTahun, "adalah 29 hari")
+        else: 
+    	     print("Total hari pada bulan ke-", inputBulan, "pada tahun", inputTahun, "adalah 28 hari")
+    else:
+	     print("Total hari pada bulan ke-", inputBulan, "pada tahun", inputTahun, "adalah 31 hari")
