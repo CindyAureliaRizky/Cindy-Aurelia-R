@@ -1,0 +1,52 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 18 13:14:25 2021
+
+@Materi : List Rata-rata
+@Judul : Praktikum 5 
+@Hari/Tanggal : Senin, 211018
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+    
+nilai = 0    
+nilaimahasiswa = list()
+
+ulang = 0
+nomor = 0
+while ulang == 0:
+    nomor += 1
+    F = str(input("masukan nilai :")) 
+    if not F : 
+        break
+    
+    else: 
+        if F == 'A': 
+            nilai = float(4.00)
+        elif F == 'A-':
+            nilai = float(3.75)
+        elif F == 'B+':
+            nilai = float(3.50)
+        elif F == 'B':
+            nilai = float(3.00)
+        elif F == 'B-':
+            nilai = float(2.75)
+        elif F == 'C+':
+            nilai = float(2.50)
+        elif F == 'C':
+            nilai = float(2.00)
+        elif F == 'C-':
+            nilai = float(1.75)
+        elif F == 'D':
+            nilai = float(1.50)
+        elif F == 'E':
+            nilai = float(1.25)
+        else:
+            print("no score detected!")
+            nilai = 0
+        print(("\nNilai ke-{0} = {1}").format(nomor, nilai))
+        nilaimahasiswa.append(nilai)
+    
+rata2 = sum(nilaimahasiswa) / len(nilaimahasiswa)
+print("rata rata nilai mahasiswa tersebut :", rata2)
+ 
