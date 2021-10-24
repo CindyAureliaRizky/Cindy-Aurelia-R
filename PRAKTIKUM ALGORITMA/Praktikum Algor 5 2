@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 24 18:23:00 2021
+
+@Materi : Struktur Kendali
+@Judul : Praktikum 5 
+@Hari/Tanggal : Minggu, 211024
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+print("WELCOME")
+print("0-2 years old : free ")
+print("3-12 years old : $14")
+print("13-66 years old : $18")
+print("other than in the list : $23")
+
+ulang = 0
+nomor = 0
+harga = 0
+
+while ulang == 0:
+    nomor += 1
+    x = int(input("Your Age : "))
+    
+    if x == int("-1"): 
+        break
+    
+    else: 
+        
+        if x <= 2: 
+            harga += 0
+            print("FREE")
+            print("Price : ", harga)
+            
+        elif(x >= 3 and x <= 12):
+            harga += 14
+            print("$14")
+            print("Price : ", harga)
+    
+            
+        elif(x >= 13 and x <= 65) :
+            harga += 18 
+            print("$18")
+            print("Price : ", harga)
+            
+        elif(x >= 66) :
+            harga += 23
+            print("$23")
+            print("Price : ", harga)
+        
+        else :
+            print("not found!")
+            harga = 0 
+        
+
+        
+Money = int(input("Put the funds : $"))
+        
+if Money == harga:
+            print("Your money is over")
+   
+elif Money < harga:
+            print("Your money must be added some amount")
+    
+elif Money > harga:
+            Money -= harga
+            print("Your Change :", Money)
