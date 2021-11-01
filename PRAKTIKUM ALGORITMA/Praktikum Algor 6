@@ -1,0 +1,69 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  1 15:11:45 2021
+
+@Materi : Fungsi
+@Judul : Praktikum 2 Materi
+@Hari/Tanggal : Senin, 211101
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+def nilai_keseluruhan ():
+    
+    nilai = 0    
+    ulang = 1
+    angka = 0
+    
+    while ulang == 1:
+        angka += 1
+        x = str(input('tekan ENTER untuk mencari rata-rata!\nNilai siswa: '))
+        if x == '': 
+            angka -= 1
+            ulang = 0
+        
+        else:
+            
+            if x == 'A': 
+                nilai += float(4)
+                a = '4'
+            
+            elif x == 'A-':
+                nilai += float(3.75)
+                a = '3,75'
+            
+            elif x == 'B+':
+                nilai += float(3.50)
+                a = '3,5'
+            
+            elif x == 'B':
+                nilai += float(3.00)
+                a = '3'
+            
+            elif x == 'B-':
+                nilai += float(2.75)
+                a = '2,75'
+            
+            elif x == 'C+':
+                nilai += float(2.50)
+                a = '2,5'
+            
+            elif x == 'C':
+                nilai += float(2.00)
+                a = '2'
+            
+            elif x == 'C-':
+                nilai += float(1.75)
+                a = '1,75'
+            
+            else:
+                print('data not found')
+                angka -= 1
+                a = 'TAK TERDEFINISI'
+            
+            print(f"nilai ke-{angka} = {a}")
+    
+    rata2 = nilai / angka
+    return rata2
+
+print("rata rata nilai adalah", nilai_keseluruhan())
