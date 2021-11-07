@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+@Materi : Fungsi
+@Judul : Praktikum 7 Materi
+@Hari/Tanggal : Minggu, 2111107
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+count = 0
+Answer = "next"
+
+while(Answer == "next"):
+    inputbulan = int(input("Insert the month : "))
+    inputtahun = int(input("Insert the year : "))
+    Answer = str(input("next or discontinue : "))
+    
+    def count_bulan():
+        
+
+        if(inputbulan >= 13 or inputbulan <= 0):
+             print("NOT FOUND")
+          
+        elif(inputbulan == 1 or inputbulan == 3 or inputbulan == 5 or inputbulan == 7 or inputbulan == 8 or inputbulan == 10 or inputbulan == 12):
+    	     print("This is 31 days")
+          
+        elif (inputbulan == 2):
+      
+            if(inputtahun % 4 == 0 and inputbulan == 2):
+                print("This is 29 days")
+                return
+        
+            else :
+                print("This is 28 days")
+            
+        else:
+           print("This is 30 days")SSSS
+        
+    count_bulan()
