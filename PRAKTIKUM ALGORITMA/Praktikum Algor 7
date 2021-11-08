@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 14:32:09 2021
+
+@Materi : Parameter
+@Judul : Praktikum 7 Materi
+@Hari/Tanggal : Senin, 211108
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+N = ' '
+
+def bilanganPrima(nilai):
+    if nilai == 1:
+        print(f"bilangan {nilai} adalah bilangan prima")
+    elif nilai == 2:
+        print(f"bilangan {nilai} adalah bilangan prima")
+    else:
+        global A 
+        for A in range(2, nilai):
+            if nilai%A==0:
+                nilai2 = 0 
+                break
+            else:
+                nilai2 = 1 
+        bilanganNonPrima(nilai2)
+        
+def bilanganNonPrima(nilai2):
+    if nilai2 == 0:
+        print(f"bilangan {nilai} adalah bilangan non prima")
+        print(f"{A} x {nilai//A} = {nilai}")
+    else:
+        print(f"{nilai} adalah bilangan non prima")
+
+B = 1
+while B == 1:               
+    nilai = int(input("insert the  number : "))
+    bilanganPrima(nilai)  
+    break           
+nilai = int(input("insert the number : "))
+bilanganPrima(nilai)
