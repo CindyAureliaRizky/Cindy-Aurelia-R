@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 13:23:02 2021
+
+@Materi : Rekrusif Fungsi
+@Judul : Praktikum 8 Materi
+@Hari/Tanggal : Mingggu, 211115
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+def penjumlahan(number = 0, jumlah = 0, n = 1):
+    if (jumlah <= 0):
+        return 0
+    else:
+        number = int(input("Masukkan Angka ke- " + str(n) + ": "))
+        if(jumlah == 1):
+            return number
+        else:
+            n+=1
+            return number + penjumlahan(number, jumlah-1, n)
+        
+total = int(input("Masukkan Jumlah : "))  
+nilai  = penjumlahan(jumlah = total)
+print("Hasil penjumlahan : " + str(nilai))
