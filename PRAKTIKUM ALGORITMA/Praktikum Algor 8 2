@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 21 21:23:20 2021
+
+
+@Materi : Rekrusif Fungsi
+@Judul : Praktikum 8 Materi
+@Hari/Tanggal : Mingggu, 211121
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+R = int(input("masukkan angka : "))
+L = int(input("masukkan pangkat : "))
+
+def pangkat(R, L):
+ if L>=1:
+     return R* pangkat(R, L-1)
+ return R
+
+hasil = pangkat(R, L)
+print(f"hasilnya adalah : {hasil} ")
