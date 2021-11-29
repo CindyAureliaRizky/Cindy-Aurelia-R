@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 14:25:50 2021
+
+@Materi : Binary Search
+@Judul : Praktikum 10 Materi
+@Hari/Tanggal : Minggu, 211129
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+def bubbleSort(array):
+    A = len(array)
+ 
+    for U in range(A):
+ 
+        for R in range(0, A-U-1):
+ 
+            if array[R] > array[R+1] :
+                array[R], array[R+1] = array[R+1], array[R]
+                
+def binarySearch(array, l, r, x):
+ 
+    # Check base case
+    if r >= l:
+ 
+        mid = l + (r - l) // 2
+ 
+        if array[mid] == x:
+            return mid
+ 
+        elif array[mid] > x:
+            return binarySearch(array, l, mid-1, x)
+ 
+        else:
+            return binarySearch(array, mid + 1, r, x)
+ 
+    else:
+        return -1
+
+array = [0, 13, 22, 38, 44, 50, 66, 71, 89, 90, 103, 111]
+x = input("input the number : ")
+x = int(x)
+
+bubbleSort(array)
+
+result = binarySearch(array, 0, len(array)-1, x)
+result = int(result)
+print("the number list : ", array)
+
+
+if result != -1:
+    print("founded! : ", (result)+1)
+else:
+    print("not found!")
