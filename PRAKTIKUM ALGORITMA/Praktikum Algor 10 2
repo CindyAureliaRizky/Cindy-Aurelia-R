@@ -1,0 +1,62 @@
+@Materi : Binary Search
+@Judul : Praktikum 10 Materi
+@Hari/Tanggal : Kamis, 211202
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+perulangan = 0
+while(perulangan == 0 ):
+
+ print("\n Program File Handling " )
+
+ print("\n1.Membuat dan Menulis")
+ print("2.Membuka")
+ print("3.Menambahkan Text")
+ print("4.Keluar Dari Program")
+
+ pilihan = int(input("\nPilih Program (1-2-3-4) : "))
+
+ if pilihan == 1 :
+
+     file = str(input("Masukkan File : "))
+     nama = str(input("Masukkan Nama : "))
+     nim = int(input("Masukkan NIM : "))
+     angkatan = int(input("Angkatan ke- : "))
+
+     nama_file = open(f'{file}','w')
+     nama_file.write(str(-1))
+     nama_file.close()
+     print("File Berhasil Dibuat!")
+
+ elif pilihan == 2 :
+
+     A = str(input("Nama Folder : "))
+     
+     nama_file = open(f'{file}','r')
+     nama_file.read()
+     nama_file.close()
+
+     print("\nNama mu adalah : ",nama)
+     print("Nim kamu adalah : ",nim)
+     print("Angkatan kamu adalah : ",angkatan)
+
+ elif pilihan == 3 :
+
+     U = str(input("Maukkan Nama File : "))
+
+     pilihan1 = str(input("Nama Teman : "))
+     catatan = str(input("Note : "))
+
+     nama_file = open(f'{file}',"a")
+     nama_file.write(str(-1))
+     nama_file.close()
+
+     print("\nNama Teman : ",pilihan1)
+     print("Note : ",catatan)
+     print("\nSelesai Ditambahkan ")
+
+ elif pilihan == 4 :
+
+     print("Selamat Datang Kembali")
+     break
