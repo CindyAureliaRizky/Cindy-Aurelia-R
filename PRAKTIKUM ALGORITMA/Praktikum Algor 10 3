@@ -1,0 +1,22 @@
+@Materi : Fungsi Rekursif
+@Judul : Praktikum 11 Materi
+@Hari/Tanggal : Kamis, 211205
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+def pilihan(A, U, R):
+    temp = A[U]
+    A[U] = A[R]
+    A[R] = temp
+
+def n_bubblesort(A, E):
+    for U in range(E - 1):
+        if A[U] > A[U + 1]:
+            pilihan(A, U, U + 1)
+    if E - 1 > 1:
+        n_bubblesort(A, E - 1)
+
+print('sebelum diurutkan: [29, 7, 25, 15, 21, 9, 10, 3]')
+A = [3, 7, 9, 10, 15, 21, 25, 29]
+n_bubblesort(A, len(A))
+print('sesudah diurutkan:', A)
