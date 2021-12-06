@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 14:46:19 2021
+
+@Materi : 
+@Judul : Praktikum 11 Materi
+@Hari/Tanggal : Senin, 211206
+@NIM : 065002100029
+@author : Cindy Aurelia Rizky
+"""
+
+class mahasiswa:
+    
+   def __init__ (self, Nama, Angkatan, NIM) :
+        
+        self.Nama = Nama
+        self.NIM = NIM
+        self.Angkatan = Angkatan
+        
+   def biodata_mahasiswa(self) :
+       print("\nAama : ", self.Nama)
+       print("NIM : ", self.NIM)
+       print("Angkatan : ", self.Angkatan)
+       
+Nama = str(input("Masukan Nama : "))
+NIM = str(input("Masukan NIM : "))
+Angkatan = str(input("Masukan Angkatan : "))
+
+biodata = mahasiswa(Nama, Angkatan, NIM)
+biodata.biodata_mahasiswa()
